@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive meta tag  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n-key="app-title">MotorsCity | Home</title>
+    <!-- The Logo icon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <!--  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!--  Plus Jakarta Sans Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- cairo font in arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- normalize file to reset the page  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- CSS Style File -->
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header section  -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow p-3 fixed-top">
+            <div class="container-fluid">
+                <!-- toggle in mobile -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                  </button>
+                <!-- Logo -->
+                <a class="navbar-brand me-lg-5 " href="#"><img class="img-fluid" src="images/logo.png" alt=""></a>
+
+                <!-- nav links -->
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <!-- links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a data-i18n-key="Search-Cars" class="nav-link fw-bold me-3 " aria-current="page" href="#">SearchCars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-i18n-key="Sell-Trade" class="nav-link fw-bold me-3 active" href="#">Sell/Trade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-i18n-key="Financing" class="nav-link fw-bold me-3" href="#">Financing</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  fw-bold me-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span data-i18n-key="WhyMotors-City"> WhyMotorsCity </span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a data-i18n-key="Action" class="dropdown-item" href="#">Action</a></li>
+                                <li><a data-i18n-key="Action1" class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a data-i18n-key="Action2" class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  fw-bold " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span data-i18n-key="Resources">Resources</span> <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a data-i18n-key="Action" class="dropdown-item" href="#">Action</a></li>
+                                <li><a data-i18n-key="Action1" class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a data-i18n-key="Action2" class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- switcher localization  -->
+                    <div class="one-quarter me-md-3" id="switch">
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label data-i18n-switcher class="label" for="chk">
+                            <option value="ar" class="arabic ">ar</option>
+                            <option value="en" class="english">en</option>
+                            <div  class="ball"></div>
+                        </label>
+                    </div>
+                    <!-- form -->
+                    <form class="d-flex" role="signUp">
+                        <button data-i18n-key="log-in" class="btn btn-out me-2 rounded-5 fw-bold prim-color log-in" type="button">Log In</button>
+                        <button data-i18n-key="sign-Up" class="btn btn-outline rounded-5 fw-bold btn-active sign-up" type="button">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Header section -->
+        <div class="container-fluid" id="header">
+            <div class="row header d-flex justify-content-between flex-lg-row-reverse">
+                <!-- image section  -->
+                <div class="col-lg-6">
+                    <div data-aos="fade-left" class="header-image ">
+                        <img class="img-header w-75" src="images/header/Layer.png" alt="">
+                    </div>
+                </div>
+                <!-- text Section -->
+                <div data-aos="fade-right" class="col-lg-6">
+                    <div class="header-text">
+                        <div class="header-body">
+                            <img class="img" src="images//header/no-bg.png" alt="">
+                            <h1 class="h1 heading">
+                                <strong data-i18n-key="h1-strong">
+                                    You choose
+                                </strong>
+                                <span data-i18n-key="h1-span">the car you want,</span>
+                            </h1>
+                            <br>
+                            <h2 class="h1 heading">
+                                <strong data-i18n-key="h2-strong">We take care</strong>
+                                <span data-i18n-key="h2-span" class="span">of the rest!</span>
+                            </h2>
+                            <p data-i18n-key="header-desc" class="description "> Buy your car online and have it delivered to your doorstep in under 24 hours</p>
+                            <div class="btns d-flex justify-content-start  w-100 ">
+                                <a data-i18n-key="header-btn" href="#" class="btn rounded-5  me-lg-5 active">shop new</a>
+                                <a data-i18n-key="header-btn2" href="#" class="btn rounded-5  prim-btn">shop used</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header section -->
+    </header>
+    <!-- End of header section -->
+
+    <!-- How It Work -->
+    <section id="how-it-works" class="how-section mt-5">
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-down" class="title-box text-center mt-lg-4">
+                    <h2 data-i18n-key="how-work-heading" class="mian-title text-capitalize  ">
+                        how it works
+                    </h2>
+                    <p data-i18n-key="how-work-desc" class="description">
+                        You won't just love our cars, you'll love the way you buy them
+                    </p>
+                </div>
+
+                <div class="row text-center ">
+
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="col-lg-4 d-flex flex-lg-column justify-content-between box">
+                        <div class="img">
+                            <img class=" w-75 img-fluid" src="images/how-it-works/Layer 104.png" alt="">
+                        </div>
+                        <div class="text-body mt-lg-5">
+                            <h3 data-i18n-key="how-work-title" class="text-capitalize mb-4 fw-bold">
+                                choose from the best<br> pre-owned cars
+                            </h3>
+                            <p data-i18n-key="how-work-para" class="mb-4 second-color">
+                                5000+fully inspected cars online.<br> Buy with money back guarantee .
+                            </p>
+                            <a data-i18n-key="btn-view-all-cars" class="link-style" href="">View All Cars</a>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500" class="col-lg-4 d-flex flex-lg-column justify-content-between flex-row-reverse  box reverse-box">
+                        <div class="img ">
+                            <img class=" w-50  img-fluid" src="images/how-it-works/Layer 187.png" alt="">
+                        </div>
+
+                        <div class="text-body">
+                            <h3 data-i18n-key="how-work-title2" class="text-capitalize mb-4 fw-bold">
+                                Buying Cash or Finance
+                            </h3>
+                            <p data-i18n-key="how-work-para2" class="mb-4 second-color">
+                                Whither buying cash or looking for affordable<br> monthly payment plane, we can help you<br> find the best deal in the market.
+                            </p>
+                            <a data-i18n-key="btn-contact-us" class="link-style" href="">Contact Us</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="col-lg-4 d-flex flex-lg-column justify-content-between box ">
+                        <div class="img">
+
+                            <img class=" w-75 img-fluid" src="images/how-it-works/Layer 101.png" alt="">
+                        </div>
+                        <div class="text-body">
+                            <h3 data-i18n-key="how-work-title3" class="text-capitalize mb-4 fw-bold">
+                                Online Payment. <br> Doorstep Delivery
+                            </h3>
+                            <p data-i18n-key="how-work-para3" class="mb-4 second-color">
+                                Contactless transaction 5-day<br> money back guarantee.</p>
+                            <a data-i18n-key="btn-buy-cars" class="link-style" href="">Buy a Car</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="row">
+                    <div class="title-box text-center pt-5">
+                        <a data-i18n-key="btn-how-it-works" href="#" class="btn btn-style rounded-5 ">Watch how it works</a>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!-- End of How It Work -->
+
+    <!-- testimonials -->
+    <section class="testimonials container-fluid" id="testimonials">
+
+        <!-- find cars  -->
+        <section class="find-cars container" id="find-cars">
+            <!-- find cars section -->
+            <div class="row cars-container">
+                <!-- main title -->
+                <div data-aos="fade-down" class="title-box text-center ">
+                    <h4 data-i18n-key="find-cars-heading" class="fw-bold title">
+                        Find cars any budget will love
+                    </h4>
+                </div>
+                <div class="row">
+                    <!-- cars title -->
+                    <div class="box-title mb-4">
+                        <strong data-i18n-key="find-cars-desc" class="text-strat">
+                            What kinds of cars do you want?
+                        </strong>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="col-12 cars-column">
+                        <!-- Swiper -->
+                        <div class=" my-swiper-cars">
+
+                            <div class="swiper-cars-wrapper">
+                                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="slide-box">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Sedan.png " alt="Sedan">
+                                        <span data-i18n-key="Sedan" class="">Sedan</span>
+                                    </div>
+                                </div>
+                                <div data-aos="fade-up" data-aos-anchor-placement="bottom-center" class="slide-box ">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/SUV.png" alt="SUV">
+                                        <span data-i18n-key="SUV" class="">SUV</span>
+                                    </div>
+
+                                </div>
+                                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="slide-box">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Truck.png " alt="Truck">
+                                        <span data-i18n-key="Truck" class="">Truck</span>
+                                    </div>
+
+                                </div>
+                                <div data-aos="fade-up" data-aos-anchor-placement="bottom-center" class="slide-box">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Hatchback.png" alt="Hatchback">
+                                        <span data-i18n-key="Hatchback" class="">Hatchback</span>
+                                    </div>
+
+                                </div>
+                                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="slide-box">
+                                    <div class="d-flex flex-column car-card justify-content-center active ">
+                                        <img class="mb-3" src="images/find-cards/Coupe.png " alt="Coupe">
+                                        <span data-i18n-key="Coupe" class="">Coupe</span>
+                                    </div>
+
+                                </div>
+                                <div data-aos="fade-up" data-aos-anchor-placement="bottom-center" class="slide-box">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Convertible.png" alt="Convertible">
+                                        <span data-i18n-key="Convertible" class="">Convertible</span>
+                                    </div>
+                                </div>
+                                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="slide-box">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Minivan.png" alt="Minivan">
+                                        <span data-i18n-key="Minivan" class="">Minivan</span>
+                                    </div>
+                                </div>
+                                <div data-aos="fade-up" data-aos-anchor-placement="bottom-center" class="slide-box">
+                                    <div class="d-flex flex-column car-card justify-content-center">
+                                        <img class="mb-3" src="images/find-cards/Wagon.png " alt="Wagon ">
+                                        <span data-i18n-key="Wagon" class="">Wagon</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper mySwiper d-none ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Sedan.png " alt="Sedan">
+                                        <span data-i18n-key="Sedan" class="">Sedan</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/SUV.png" alt="SUV">
+                                        <span data-i18n-key="SUV" class="">SUV</span>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Truck.png " alt="Truck">
+                                        <span data-i18n-key="Truck" class="">Truck</span>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Hatchback.png" alt="Hatchback">
+                                        <span data-i18n-key="Hatchback" class="">Hatchback</span>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column car-card justify-content-center active ">
+                                        <img class="mb-3" src="images/find-cards/Coupe.png " alt="Coupe">
+                                        <span data-i18n-key="Coupe" class="">Coupe</span>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Convertible.png" alt="Convertible">
+                                        <span data-i18n-key="Convertible" class="">Convertible</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="d-flex flex-column car-card justify-content-center ">
+                                        <img class="mb-3" src="images/find-cards/Minivan.png" alt="Minivan">
+                                        <span data-i18n-key="Minivan" class="">Minivan</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="d-flex flex-column car-card justify-content-center">
+                                        <img class="mb-3" src="images/find-cards/Wagon.png " alt="Wagon ">
+                                        <span data-i18n-key="Wagon" class="">Wagon</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- input row -->
+                    <div class="row d-flex justify-content-center input-box mt-5">
+                        <div class="col-12">
+                            <!-- title -->
+                            <div class="row">
+                                <div class="cars-title mb-4 ">
+                                    <strong data-i18n-key="find-cards-form-title" class="text-strat ">
+                                        What do your finances look like?
+                                    </strong>
+                                </div>
+                            </div>
+                            <!-- input filed -->
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div data-aos="flip-left" class="mb-3 ">
+                                        <label data-i18n-key="find-cards-form-label" for="exampleFormControlInput1 " class="form-label ">Monthly Payment</label>
+                                        <input type="number " class="form-control " placeholder="$ 400 " id="rangevalu" value="$ 400 " oninput="range.value=value">
+                                    </div>
+                                    <div class="mb-3 slider-range ">
+                                        <!-- range with oinput method -->
+                                        <input type="range" class="range" id="slide" value="50" min="0" max="1000000" id="range" oninput="rangevalu.value=value" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 ">
+                                    <div data-aos="flip-right" class="mb-3 ">
+                                        <label data-i18n-key="find-cards-form-label2" for="exampleFormControlInput1 " class="form-label ">Cash Down</label>
+                                        <input type="number " class="form-control " placeholder="$ 2,000 " id="rangevalue" value="$ 2,000 " oninput="range.value=value">
+                                    </div>
+                                    <div class="mb-3 slider-range ">
+                                        <!-- range with oinput method -->
+                                        <input type="range" class="range" id="slider" value="50" min="0" max="1000000" id="range" oninput="rangevalue.value=value" />
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="budget ">
+                                        <h5 data-i18n-key="budget-title" class="budget-title mb-3">Estimated budget</h5>
+                                        <strong data-i18n-key="budget-amount" class="amount ">$20,510</strong>
+                                        <a data-i18n-key="btn-budget" href="# " class="btn rounded-5 btn-style btn-shadw mt-3">Shop With Budget</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cradit -->
+                    <div class="row mt-3 crdit-link">
+                        <div class="col-12">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link fw-bold me-3 " href="#" id="navbarDropdown " role="button " data-bs-toggle="dropdown" aria-expanded="false ">
+                                        <p>
+                                            <span data-i18n-key="cradit-text"> Cradit Score</span>
+                                            <span class="cradit-text "> 
+                                                    Fair(580-669FICO<sup>&reg;</sup>Score) 
+                                            <i class="fa-solid fa-angle-down m-1 "></i>
+                                            </span>
+                                        </p>
+                                    </a>
+                                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                                        <li><a data-i18n-key="Action" class="dropdown-item " href="">Action</a></li>
+                                        <li><a data-i18n-key="Action1" class="dropdown-item " href="">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a data-i18n-key="Action2" class="dropdown-item " href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of find cars  -->
+        <!--  -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/testimonials/Layer.png" class="img-fluid" alt="testimonials">
+                    <div class="carousel-caption  text-start">
+                        <h5 class="mb-3 fw-bolde">
+                            <i class="fa-solid fa-quote-left me-3"></i>
+                            <span data-i18n-key="testimonials-title"> Great customer service</span>
+                        </h5>
+                        <p data-i18n-key="testimonials-desc-p1" class="text-light">
+                            Great customer service. Great delivery of the car. Very convenient to pick the car
+                        </p>
+                        <p data-i18n-key="testimonials-desc-p2" class="text-light">
+                            you want and have it delivered to your doorstep with little issues.
+                        </p>
+                        <p data-i18n-key="testimonials-name" class="fw-bold mt-4">- Jason M.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/testimonials/Layer.png" class="img-fluid" alt="testimonials">
+                    <div class="carousel-caption  text-start">
+                        <h5 class="mb-3 fw-bolde">
+                            <i class="fa-solid fa-quote-left me-3"></i>
+                            <span data-i18n-key="testimonials-title"> Great customer service</span>
+                        </h5>
+                        <p data-i18n-key="testimonials-desc-p1" class="text-light">
+                            Great customer service. Great delivery of the car. Very convenient to pick the car
+                        </p>
+                        <p data-i18n-key="testimonials-desc-p2" class="text-light">
+                            you want and have it delivered to your doorstep with little issues.
+                        </p>
+                        <p data-i18n-key="testimonials-name" class="fw-bold mt-4">- Jason M.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/testimonials/Layer.png" class="img-fluid" alt="testimonials">
+                    <div class="carousel-caption  text-start">
+                        <h5 class="mb-3 fw-bolde">
+                            <i class="fa-solid fa-quote-left me-3"></i>
+                            <span data-i18n-key="testimonials-title"> Great customer service</span>
+                        </h5>
+                        <p data-i18n-key="testimonials-desc-p1" class="text-light">
+                            Great customer service. Great delivery of the car. Very convenient to pick the car
+                        </p>
+                        <p data-i18n-key="testimonials-desc-p2" class="text-light">
+                            you want and have it delivered to your doorstep with little issues.
+                        </p>
+                        <p data-i18n-key="testimonials-name" class="fw-bold mt-4">- Jason M.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/testimonials/Layer.png" class="img-fluid" alt="testimonials">
+                    <div class="carousel-caption  text-start">
+                        <h5 class="mb-3 fw-bolde">
+                            <i class="fa-solid fa-quote-left me-3"></i>
+                            <span data-i18n-key="testimonials-title"> Great customer service</span>
+                        </h5>
+                        <p data-i18n-key="testimonials-desc-p1" class="text-light">
+                            Great customer service. Great delivery of the car. Very convenient to pick the car
+                        </p>
+                        <p data-i18n-key="testimonials-desc-p2" class="text-light">
+                            you want and have it delivered to your doorstep with little issues.
+                        </p>
+                        <p data-i18n-key="testimonials-name" class="fw-bold mt-4">- Jason M.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--End testimonials -->
+
+    <!-- drive seat -->
+    <section class="container-fluid" id="drive-section">
+        <div class="row ">
+            <div data-aos="fade-up" data-aos-duration="3000" class="drive-seat text-center">
+                <div class="img">
+                    <img src="images/drive-section/no-bg.png " alt=" drive-section">
+                </div>
+                <div class="title-box text-center mt-lg-4 ">
+                    <h4 data-i18n-key="drive-section-title" class="drive-title">
+                        You're in
+                        <span>the Driver's seat</span>
+                    </h4>
+                    <p data-i18n-key="drive-section-desc" class="drive-description">
+                        Wherever you adventure, we're here to help you navigate
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tap-links">
+                            <ul class="nav nav-tabs " id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button data-i18n-key="tap-liks-1" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#slide-one-pane" type="button" role="tab" aria-controls="slide-one-pane" aria-selected="true">Finance</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button data-i18n-key="tap-liks-2" class="nav-link" id="slide-two-tab" data-bs-toggle="tab" data-bs-target="#slide-two-pane" type="button" role="tab" aria-controls="slide-two-pane" aria-selected="false">Shop</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button data-i18n-key="tap-liks-3" class="nav-link" id="slide-three" data-bs-toggle="tab" data-bs-target="#slide-three-pane" type="button" role="tab" aria-controls="slide-three-pane" aria-selected="false">Sell or Trade</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button data-i18n-key="tap-liks-1" class="nav-link" id="slide-foure" data-bs-toggle="tab" data-bs-target="#slide-foure-pane" type="button" role="tab" aria-controls="slide-foure-pane" aria-selected="false">Services</button>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content text-center" id="myTabContent">
+                                <div class="tab-pane fade show active" id="slide-one-pane" role="tabpanel" aria-labelledby="slide-one" tabindex="0">
+                                </div>
+
+                                <div class="tab-pane fade" id="slide-two-pane" role="tabpanel" aria-labelledby="slide-two-tab" tabindex="0">
+                                </div>
+
+                                <div class="tab-pane fade" id="slide-three-pane" role="tabpanel" aria-labelledby="slide-three" tabindex="0"></div>
+                                <div class="tab-pane fade" id="slide-foure-pane" role="tabpanel" aria-labelledby="slide-foure-tab" tabindex="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slide show -->
+        <div class="slide-show">
+            <div class=" container ">
+                <div id="carouselExampleDark" class="carousel slide-show-carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner inner-slide-show">
+                        <div class="carousel-item  active" data-bs-interval="10000" id="slide-one">
+                            <div class="carousel-caption row">
+                                <div class="col-5">
+                                    <div data-aos="fade-up" data-aos-duration="3000" class="img w-100 ">
+                                        <img class="w-100" src="images/drive-section/Layer 122.png" alt="drive">
+                                    </div>
+                                </div>
+
+                                <div data-aos="fade-down" data-aos-duration="3000" class="col-5 text-start pt-5 text-box">
+                                    <h5>
+                                        <span data-i18n-key="slide-show-title1"> Choose from the best</span>
+                                        <br>
+                                        <span data-i18n-key="slide-show-title2">pre-owned cars</span>
+                                    </h5>
+                                    <p data-i18n-key="slide-show-desc1">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    </p>
+                                    <p data-i18n-key="slide-show-desc2">do eiusmod tempor incididunt ut labore et dolore magna</p>
+                                    <p data-i18n-key="slide-show-desc3">aliqua. Ut enim ad minim veniam, quis nostru</p>
+                                    <div class="row ">
+                                        <div class="title-box text-start pt-4">
+                                            <a data-i18n-key="btn-how-it-works" href="#" class="btn btn-style rounded-5 ">Watch how it works</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item " data-bs-interval="2000" id="slide-two">
+                            <div class="carousel-caption row">
+                                <div class="col-5">
+                                    <div data-aos="fade-up" data-aos-duration="3000" class="img w-100 ">
+                                        <img class="w-100" src="images/drive-section/Layer 122.png" alt="drive">
+                                    </div>
+                                </div>
+
+                                <div data-aos="fade-down" data-aos-duration="3000" class="col-5 text-start pt-5 text-box">
+                                    <h5>
+                                        <span data-i18n-key="slide-show-title1"> Choose from the best</span>
+                                        <br>
+                                        <span data-i18n-key="slide-show-title2">pre-owned cars</span>
+                                    </h5>
+                                    <p data-i18n-key="slide-show-desc1">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    </p>
+                                    <p data-i18n-key="slide-show-desc2">do eiusmod tempor incididunt ut labore et dolore magna</p>
+                                    <p data-i18n-key="slide-show-desc3">aliqua. Ut enim ad minim veniam, quis nostru</p>
+                                    <div class="row">
+                                        <div class="title-box text-start pt-4">
+                                            <a data-i18n-key="btn-how-it-works" href="#" class="btn btn-style rounded-5 ">Watch how it works</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " id="slide-three">
+
+                            <div class="carousel-caption row">
+                                <div class="col-5">
+                                    <div data-aos="fade-up" data-aos-duration="3000" class="img w-100 ">
+                                        <img class="w-100" src="images/drive-section/Layer 122.png" alt="drive">
+                                    </div>
+                                </div>
+
+                                <div data-aos="fade-down" data-aos-duration="3000" class="col-5 text-start pt-5 text-box">
+                                    <h5>
+                                        <span data-i18n-key="slide-show-title1"> Choose from the best</span>
+                                        <br>
+                                        <span data-i18n-key="slide-show-title2">pre-owned cars</span>
+                                    </h5>
+                                    <p data-i18n-key="slide-show-desc1">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    </p>
+                                    <p data-i18n-key="slide-show-desc2">do eiusmod tempor incididunt ut labore et dolore magna</p>
+                                    <p data-i18n-key="slide-show-desc3">aliqua. Ut enim ad minim veniam, quis nostru</p>
+                                    <div class="row">
+                                        <div class="title-box text-start pt-4">
+                                            <a data-i18n-key="btn-how-it-works" href="#" class="btn btn-style rounded-5 ">Watch how it works</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item " id="slide-foure">
+
+                            <div class="carousel-caption row">
+                                <div class="col-5">
+                                    <div data-aos="fade-up" data-aos-duration="3000" class="img w-100 ">
+                                        <img class="w-100" src="images/drive-section/Layer 122.png" alt="drive">
+                                    </div>
+                                </div>
+
+                                <div data-aos="fade-down" data-aos-duration="3000" class="col-5 text-start pt-5 text-box">
+                                    <h5>
+                                        <span data-i18n-key="slide-show-title1"> Choose from the best</span>
+                                        <br>
+                                        <span data-i18n-key="slide-show-title2">pre-owned cars</span>
+                                    </h5>
+                                    <p data-i18n-key="slide-show-desc1">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    </p>
+                                    <p data-i18n-key="slide-show-desc2">do eiusmod tempor incididunt ut labore et dolore magna</p>
+                                    <p data-i18n-key="slide-show-desc3">aliqua. Ut enim ad minim veniam, quis nostru</p>
+                                    <div class="row">
+                                        <div class="title-box text-start pt-4">
+                                            <a data-i18n-key="btn-how-it-works" href="#" class="btn btn-style rounded-5 ">Watch how it works</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="fa-solid fa-angle-left" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="fa-solid fa-angle-right"  aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end drive seat -->
+
+    <!-- prices -->
+    <section class="container-fluid" id="prices-section">
+
+        <div class="container">
+            <div class="row padding pr-box">
+                <div class="col-lg-6">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="prices-box">
+                        <h5>
+                            <span data-i18n-key="prices-section-title1"> Competitive Prices.</span>
+                            <br>
+                            <span data-i18n-key="prices-section-title2">Flexible Payment Options.</span>
+                        </h5>
+
+                        <p class="des-one">
+                            <span data-i18n-key="prices-section-desc1">Our pricing is competitive and transparent. Unlike most dealers, we don’t have</span>
+                            <span data-i18n-key="prices-section-desc2">any hidden admin fees or other costs. The price you see is the price you pay. No hassle. No haggling.</span>
+                        </p>
+
+                        <p class="des-two">
+                            <span data-i18n-key="prices-section-desc3"> You are in control and you decide how you pay. You can pay in full online, make a </span>
+                            <span data-i18n-key="prices-section-desc4">partial online payment and pay the remaining balance in person when we deliver </span>
+                            <span data-i18n-key="prices-section-desc5">your car, or you can finance through your own bank or with us.</span>
+
+                        </p>
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="img">
+                            <img src="images/prices/Rounded 7.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-6  price-image">
+                    <div class="img">
+                        <img src="images/prices/Iphone.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--end prices -->
+
+    <!-- Guide and tips -->
+    <section class="container" id="guide-and-tips">
+        <!-- title -->
+        <div class="row">
+            <div data-aos="fade-down" class="title-box text-center mt-lg-4">
+                <h2 data-i18n-key="guide-and-tips-title" class="mian-title text-capitalize  ">
+                    Guide & Tips
+                </h2>
+                <p data-i18n-key="guide-and-tips-desc" class="description ">Everything you need to know about buying, selling, and maintaining your car</p>
+            </div>
+
+        </div>
+        <!-- Guide image -->
+        <div class="row">
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-6">
+                <div class="row">
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-6">
+                        <div class="card small-img text-white">
+                            <img class="img-fluid" src="images/Guides and Tips/Layer 113.png" alt="">
+                            <div class="card-img-overlay">
+                                <h5 data-i18n-key="guide-img-title" class="card-title">
+                                    The Best Family Cars
+                                </h5>
+                                <p class="card-text">
+                                    <span data-i18n-key="guide-img-desc1">
+                                        The number of seats is just the tip of the
+                                    </span>
+                                    <span data-i18n-key="guide-img-desc2">
+                                        iceberg. Learn what makes for the best
+                                    </span>
+                                </p>
+                                <div class=" text-start ">
+                                    <a data-i18n-key="guide-img-btn" href="#" class="btn read-btn rounded-5 ">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-6">
+                        <div class="card none-sm text-white">
+                            <img src="images/Guides and Tips/Layer 124.png" alt="">
+                            <div class="card-img-overlay">
+                                <h5 data-i18n-key="guide-img-title" class="card-title">
+                                    The Best Family Cars
+                                </h5>
+                                <p class="card-text">
+                                    <span data-i18n-key="guide-img-desc1">
+                                        The number of seats is just the tip of the
+                                    </span>
+                                    <span data-i18n-key="guide-img-desc2">
+                                        iceberg. Learn what makes for the best
+                                    </span>
+                                </p>
+                                <div class=" text-start ">
+                                    <a data-i18n-key="guide-img-btn" href="#" class="btn read-btn rounded-5 ">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-12">
+                        <div class="card none-sm text-white">
+                            <img src="images/Guides and Tips/Layer 120.png" alt="">
+                            <div class="card-img-overlay">
+                                <h5 data-i18n-key="guide-img-title" class="card-title">
+                                    The Best Family Cars
+                                </h5>
+                                <p class="card-text">
+                                    <span data-i18n-key="guide-img-desc3">
+                                        The number of seats is just the tip of the
+                                    </span>
+                                    <span data-i18n-key="guide-img-desc4">
+                                        iceberg. Learn what makes for the best family car, from advanced safety features
+                                    </span>
+                                </p>
+                                <div class=" text-start ">
+                                    <a data-i18n-key="guide-img-btn" href="#" class="btn read-btn rounded-5 ">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-lg-6">
+                <div class="card  text-white big-box">
+                    <img class="img-fluid" src="images/Guides and Tips/Rounded Rectangle 3 copy 3.png" alt="">
+                    <div class="card-img-overlay">
+                        <h5 data-i18n-key="guide-img-title" class="card-title">
+                            The Best Family Cars
+                        </h5>
+                        <p class="card-text">
+
+                            <span data-i18n-key="guide-img-desc5">
+                                The number of seats is just the tip of the iceberg. Learn what makes for the best family car,
+                            </span>
+                            <span data-i18n-key="guide-img-desc6">
+                                from advanced safety features to cargo space and family-oriented
+                            </span>
+                        </p>
+                        <div class=" text-start ">
+                            <a data-i18n-key="guide-img-btn" href="#" class="btn read-btn rounded-5 ">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Show all links -->
+        <div class="row mt-5 text-center">
+            <div class="guide-links">
+                <a class="link-style" href="#">
+                    <span data-i18n-key="guide-img-show-all">Show all</span>
+                    <i class="fa-solid fa-angle-down ms-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end Guide and tips -->
+
+    <!-- Cars style -->
+    <section class="container-fluid" id="cars-style">
+        <!-- title -->
+        <div class="row">
+            <div data-aos="fade-down" class="title-box text-center mt-lg-4">
+                <h2 data-i18n-key="cars-style-title" class="mian-title text-capitalize mb-0 ">
+                    Cars by Body Style
+                </h2>
+            </div>
+
+        </div>
+        <div class="container ">
+
+            <!-- cars-container for desktop only -->
+            <div class="row text-center cars-box ">
+                <div class="col-lg-3">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="d-flex flex-column car-card justify-content-center ">
+                        <img class="mb-4" src="images/find-cards/Sedan.png " alt="Sedan">
+                        <span data-i18n-key="Sedan" class="">Sedan</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="d-flex flex-column car-card justify-content-center ">
+                        <img class="mb-4" src="images/find-cards/SUV.png" alt="SUV">
+                        <span data-i18n-key="SUV" class="">SUV</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="d-flex flex-column car-card justify-content-center ">
+                        <img class="mb-4" src="images/find-cards/Truck.png " alt="Truck">
+                        <span data-i18n-key="Truck" class="">Truck</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="d-flex flex-column car-card justify-content-center ">
+                        <img class="mb-4" src="images/find-cards/Hatchback.png" alt="Hatchback">
+                        <span data-i18n-key="Hatchback" class="">Hatchback</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-1 cars-box">
+                <div class="col-lg-3">
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-center" class="d-flex flex-column car-card justify-content-center">
+                        <img class="mb-4" src="images/find-cards/Coupe.png " alt="Coupe">
+                        <span data-i18n-key="Coupe" class="">Coupe</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div data-aos="fade-up" data-aos-anchor-placement="bottom-center" class="d-flex flex-column car-card justify-content-center ">
+                        <img class="mb-4" src="images/find-cards/Convertible.png" alt="Convertible">
+                        <span data-i18n-key="Convertible" class="">Convertible</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="d-flex flex-column car-card justify-content-center ">
+                        <img class="mb-4" src="images/find-cards/Minivan.png" alt="Minivan">
+                        <span data-i18n-key="Minivan" class="">Minivan</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div data-aos="fade-up" data-aos-anchor-placement="bottom-center" class="d-flex flex-column car-card justify-content-center">
+                        <img class="mb-4" src="images/find-cards/Wagon.png " alt="Wagon ">
+                        <span data-i18n-key="Wagon" class="">Wagon</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper on mobile -->
+            <div class="swiper myCarStyle d-none">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column car-card justify-content-center ">
+                            <img class="mb-3" src="images/find-cards/Sedan.png " alt="Sedan">
+                            <span data-i18n-key="Sedan" class="">Sedan</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column car-card justify-content-center ">
+                            <img class="mb-3" src="images/find-cards/SUV.png" alt="SUV">
+                            <span data-i18n-key="SUV" class="">SUV</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column car-card justify-content-center ">
+                            <img class="mb-3" src="images/find-cards/Truck.png " alt="Truck">
+                            <span data-i18n-key="Truck" class="">Truck</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column car-card justify-content-center ">
+                            <img class="mb-3" src="images/find-cards/Hatchback.png" alt="Hatchback">
+                            <span data-i18n-key="Hatchback" class="">Hatchback</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column car-card justify-content-center active ">
+                            <img class="mb-3" src="images/find-cards/Coupe.png " alt="Coupe">
+                            <span data-i18n-key="Coupe" class="">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column car-card justify-content-center ">
+                            <img class="mb-3" src="images/find-cards/Convertible.png" alt="Convertible">
+                            <span data-i18n-key="Convertible" class="">Convertible</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column car-card justify-content-center ">
+                            <img class="mb-3" src="images/find-cards/Minivan.png" alt="Minivan">
+                            <span data-i18n-key="Minivan" class="">Minivan</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column car-card justify-content-center">
+                            <img class="mb-3" src="images/find-cards/Wagon.png " alt="Wagon ">
+                            <span data-i18n-key="Wagon" class="">Wagon</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Cars style -->
+
+    <!-- Popular Brands-->
+    <section class="container-fluid" id="popular-brands">
+        <!-- title -->
+        <div class="row">
+            <div data-aos="fade-down" class="title-box text-center mt-lg-4">
+                <h2 data-i18n-key="popular-brands-title" class="mian-title text-capitalize mb-0 ">
+                    Popular Brands
+                </h2>
+            </div>
+
+        </div>
+
+        <div class="container ">
+            <div class="row text-center brands-row ">
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Toyota.png" alt="Toyota">
+                        </div>
+                        <span data-i18n-key="Toyota" class="fw-bolder mt-2">Toyota</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Ford.png" alt="Ford">
+                        </div>
+                        <span data-i18n-key="Ford" class="fw-bolder mt-2">Ford</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Honda.png " alt="Honda">
+                        </div>
+                        <span data-i18n-key="Honda" class="fw-bolder mt-2">Honda</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-down" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Nissan.png" alt="Nissan">
+                        </div>
+                        <span data-i18n-key="Nissan" class="fw-bolder mt-2">Nissan</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Jeep.png" alt="Jeep">
+                        </div>
+                        <span data-i18n-key="Jeep" class="fw-bolder mt-2">Jeep</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Chevrolet.png" alt="Chevrolet">
+                        </div>
+                        <span data-i18n-key="Chevrolet" class="fw-bolder mt-2">Chevrolet</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-down" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Hyundai.png" alt="Hyundai">
+                        </div>
+                        <span data-i18n-key="Hyundai" class="fw-bolder mt-2">Hyundai</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Mercedes-Benz.png" alt="Mercedes-Benz">
+                        </div>
+                        <span data-i18n-key="Mercedes-Benz" class="fw-bolder mt-2">Mercedes-Benz</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center brands-row mt-1">
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/BMW.png" alt="BMW">
+                        </div>
+                        <span data-i18n-key="BMW" class="fw-bolder mt-2">BMW</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Lexus.png" alt="Lexus">
+                        </div>
+                        <span data-i18n-key="Lexus" class="fw-bolder mt-2">Lexus</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Audi.png" alt="Audi">
+                        </div>
+                        <span data-i18n-key="Audi" class="fw-bolder mt-2">Audi</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-down" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Cadillac.png" alt="Cadillac">
+                        </div>
+                        <span data-i18n-key="Cadillac" class="fw-bolder mt-2">Cadillac</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Kia.png" alt="Kia">
+                        </div>
+                        <span data-i18n-key="KiA" class="fw-bolder mt-2">KiA</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Volvo.png" alt="Volvo">
+                        </div>
+                        <span data-i18n-key="Volvo" class="fw-bolder mt-2">Volvo</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-down" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Mazda.png" alt="Mazda">
+                        </div>
+                        <span data-i18n-key="Mazda" class="fw-bolder mt-2">Mazda</span>
+                    </div>
+                </div>
+                <div class="col-lg-1 m-4">
+                    <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine" class="d-flex flex-column brand-box justify-content-center ">
+                        <div class="img-box">
+                            <img class="" src="images/Popular Brands/Lincoln.png" alt="Lincoln">
+                        </div>
+                        <span data-i18n-key="Lincoln" class="fw-bolder mt-2">Lincoln</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Swiper on mobile -->
+            <div class="swiper myCarBrand d-none">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Toyota.png" alt="Toyota">
+                            </div>
+                            <span data-i18n-key="Toyota" class="fw-bolder mt-2">Toyota</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Ford.png" alt="Ford">
+                            </div>
+                            <span data-i18n-key="Ford" class="fw-bolder mt-2">Ford</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Honda.png " alt="Honda">
+                            </div>
+                            <span data-i18n-key="Honda" class="fw-bolder mt-2">Honda</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Nissan.png" alt="Nissan">
+                            </div>
+                            <span data-i18n-key="Nissan" class="fw-bolder mt-2">Nissan</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Jeep.png" alt="Jeep">
+                            </div>
+                            <span data-i18n-key="Jeep" class="fw-bolder mt-2">Jeep</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Chevrolet.png" alt="Chevrolet">
+                            </div>
+                            <span data-i18n-key="Chevrolet" class="fw-bolder mt-2">Chevrolet</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Hyundai.png" alt="Hyundai">
+                            </div>
+                            <span data-i18n-key="Hyundai" class="fw-bolder mt-2">Hyundai</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Mercedes-Benz.png" alt="Mercedes-Benz">
+                            </div>
+                            <span data-i18n-key="Mercedes-Benz" class="fw-bolder mt-2">Mercedes-Benz</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/BMW.png" alt="BMW">
+                            </div>
+                            <span data-i18n-key="BMW" class="fw-bolder mt-2">BMW</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Lexus.png" alt="Lexus">
+                            </div>
+                            <span data-i18n-key="Lexus" class="fw-bolder mt-2">Lexus</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Audi.png" alt="Audi">
+                            </div>
+                            <span data-i18n-key="Audi" class="fw-bolder mt-2">Audi</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Cadillac.png" alt="Cadillac">
+                            </div>
+                            <span data-i18n-key="Cadillac" class="fw-bolder mt-2">Cadillac</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Kia.png" alt="Kia">
+                            </div>
+                            <span data-i18n-key="KiA" class="fw-bolder mt-2">KiA</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Volvo.png" alt="Volvo">
+                            </div>
+                            <span data-i18n-key="Volvo" class="fw-bolder mt-2">Volvo</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Mazda.png" alt="Mazda">
+                            </div>
+                            <span data-i18n-key="Mazda" class="fw-bolder mt-2">Mazda</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column brand-box justify-content-center ">
+                            <div class="img-box">
+                                <img class="" src="images/Popular Brands/Lincoln.png" alt="Lincoln">
+                            </div>
+                            <span data-i18n-key="Lincoln" class="fw-bolder mt-2">Lincoln</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Show all links -->
+            <div class="row mt-5 text-center">
+                <div class="guide-links">
+                    <a class="link-style" href="#">
+                        <span data-i18n-key="guide-img-show-all">Show all</span>
+                        <i class="fa-solid fa-angle-down ms-3"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Popular Brands -->
+
+    <!-- Sell your car -->
+    <section class="container-fluid " id="sell-your-car">
+        <div class="container mb-0 ">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="img-box ">
+                        <div class="img-one w-100">
+                            <img class="w-75" src="images/Sell-your-car/Layer-1.png" alt="">
+                        </div>
+                        <img class="img-two w-50" src="images/Sell-your-car/Layer-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="sell-box me-2">
+                        <h5>
+                            <span data-i18n-key="sell-your-car-title1">Sell your car for the</span><br>
+                            <span data-i18n-key="sell-your-car-title2"> best price</span>
+
+                        </h5>
+                        <ul class="list-group">
+                            <li class=" d-flex  align-items-center mb-1">
+                                <span class="badge me-2">
+                                    <img src="images/Sell-your-car/icon-1.png" alt="">
+                                </span>
+                                <p data-i18n-key="sell-your-car-desc1">Get instant online quote</p>
+                            </li>
+                            <li class=" d-flex  align-items-center mb-1">
+                                <span class="badge me-2">
+                                    <img src="images/Sell-your-car/icon-2.png" alt="">
+                                </span>
+                                <p data-i18n-key="sell-your-car-desc2">Free Doorstep Evaluation</p>
+
+                            </li>
+                            <li class=" d-flex  align-items-center mb-1">
+                                <span class="badge me-2">
+                                    <img src="images/Sell-your-car/icon-3.png" alt="">
+                                </span>
+                                <p data-i18n-key="sell-your-car-desc3">Same Day Payment</p>
+                            </li>
+                            <li class="d-flex align-items-center button mt-5 ">
+                                <a data-i18n-key="sell-your-car-btn" href="#" class="btn rounded-5 sell-btn">Get Price</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--End of Sell your car -->
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row footer-row ">
+                <div class="col-lg-3">
+                    <div class="img-box">
+                        <img class="logo" src="images/footer/no-bg.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group">
+                        <li class=" d-flex  align-items-sm-start mb-1">
+                            <span class="badge me-2">
+                                <img src="images/footer/location.png" alt="">
+                            </span>
+                            <span>
+                                <span data-i18n-key="footer-location1">12039 Smith Avenue</span><br>
+                            <span data-i18n-key="footer-location2">Santa Fe Springs, CA 90670</span>
+                            </span>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group">
+                        <li class=" d-flex  align-items-center mb-2">
+                            <span class="badge me-2">
+                                <img src="images/footer/phone.png" alt="">
+                            </span>
+                            <span data-i18n-key="footer-address">12039 Toll-free 0877 338 0999</span>
+                        </li>
+                        <li class=" d-flex  align-items-center mb-2">
+                            <span class="badge me-2">
+                                <img src="images/footer/phone.png" alt="">
+                            </span>
+                            <span data-i18n-key="footer-phone">12039 Fax 562 236 9429</span>
+                        </li>
+                        <li class=" d-flex  align-items-center mb-2">
+                            <span class="badge me-2">
+                                <img src="images/footer/message.png" alt="">
+                            </span>
+                            <span data-i18n-key="footer-email">12039 Info@motorscity.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group">
+                        <li class=" d-flex form-title align-items-center mb-2">
+                            <strong data-i18n-key="footer-form-title">Join our Email Club </strong>
+                        </li>
+                        <li class=" d-flex  align-items-center mb-1">
+                            <form class="w-100">
+                                <div class="mb-3 w-100">
+                                    <input type="email" class="form-control english" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ...">
+                                    <input type="email" class="form-control d-none arabic " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="  البريد الالكتروني ...">
+                                </div>
+                                <button data-i18n-key="footer-btn" type="submit" class="btn rounded-5 w-100 text-uppercase mt-2">Sign Up</button>
+                            </form>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-lg-between align-lg-content-center copyRight ">
+                <div class="col-lg-6 text">
+                    <p>
+                        &copy;<span data-i18n-key="footer-copyRight">2022 Copyright. All rights reserved.</span>
+                    </p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <ul class="list-group">
+                        <li class="mb-2 list-unstyled">
+                            <img class="me-2" src="images/footer/facebook.png" alt="">
+                            <img src="images/footer/instagram.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- i18next -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.8.9/i18next.min.js" integrity="sha512-eE7810hOIF9/s25l1oXWdKcpLlc03wLsEKB0nJCZdjANJxxg32JoV+V/ZTkd3IB+jw1mjhnJqZwLa7I6uj+iKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4a3eed5c82.js " crossorigin="anonymous "></script>
+
+    <!-- i18next-browser-languagedetector -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.4/i18nextBrowserLanguageDetector.min.js " integrity="sha512-bGz3U95guf5zAoOw534n29YBDcVyxU/kiVQY8ps7kRzbZKLz31bhtHWgTXMyQwdcnNj+URo2qSuBbP4ZlbfgQw==" crossorigin="
+                                                anonymous " referrerpolicy="no-referrer "></script>
+    <!-- Bootstrap5 CDN -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+    <!-- JavaScript Main File -->
+    <script src="js/main.js "></script>
+
+</body>
+
+</html>
