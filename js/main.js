@@ -129,7 +129,7 @@ async function setLocale(newLocale) {
 // Retrieve translations JSON object for the given
 // locale over the network
 async function fetchTranslationsFor(newLocale) {
-    const response = await fetch(`../lang/${newLocale}.json`);
+   const response = await fetch(`./js/${newLocale}.json`);
     return await response.json();
 }
 
